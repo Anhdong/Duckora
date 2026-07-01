@@ -1,13 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/anhdong/duckora
+
 name: duckora
-# description will be included in the image's metadata
 description: This is my personal OS image.
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/blue-build/base-images/fedora-silverblue
-image-version: 44 # latest is also supported if you want new updates ASAP
+image-version: latest
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -15,7 +14,7 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* into your image's root folder /
+        destination: /
 
   - type: dnf
     repos:
@@ -23,6 +22,7 @@ modules:
         - vscodium.repo
       copr:
         - atim/starship
+      cleanup: true
     install:
       packages:
         - codium
@@ -34,13 +34,20 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
+      - notify: true
+        scope: user
+        install:
           - org.gnome.Loupe
+          - com.vixalien.sticky
+          - org.localsend.localsend_app
           - app.zen_browser.zen
-          
-      - scope: user # Also add Flathub user repo, but no user packages
+          - com.notesnook.Notesnook
+          - dev.vencord.Vesktop
+          - io.github.Faugus.faugus-launcher
+          - io.ente.auth
+          - com.bitwarden.desktop
+          - org.kde.kdenlive
+          - org.inkscape.Inkscape
+          - com.obsproject.Studio
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
