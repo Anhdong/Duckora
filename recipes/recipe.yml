@@ -32,6 +32,10 @@ modules:
         - firefox
         - firefox-langpacks
 
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+
   - type: default-flatpaks
     configurations:
       - notify: true
