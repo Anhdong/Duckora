@@ -29,6 +29,7 @@ modules:
         - starship
     remove:
       packages:
+        - gnome-software
         - firefox
         - firefox-langpacks
 
@@ -41,6 +42,7 @@ modules:
       - notify: true
         scope: user
         install:
+          - io.github.kolunmi.Bazaar
           - org.gnome.Loupe
           - com.vixalien.sticky
           - org.localsend.localsend_app
