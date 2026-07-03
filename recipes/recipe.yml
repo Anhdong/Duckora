@@ -8,8 +8,12 @@ description: This is my personal OS image.
 base-image: ghcr.io/blue-build/base-images/fedora-silverblue
 image-version: 44
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
+type: os-release
+properties:
+  ID: duckora
+  NAME: Duckora
+  PRETTY_NAME: Duckora(Silverblue)
+
 modules:
   - type: files
     files:
