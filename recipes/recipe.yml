@@ -29,6 +29,7 @@ modules:
         - starship
     remove:
       packages:
+        - gnome-system-monitor
         - gnome-software
         - firefox
         - firefox-langpacks
@@ -41,14 +42,29 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: user
+      - scope: system
+        repo:
+          title: Flathub (system)
         install:
           - io.github.kolunmi.Bazaar
+          - com.github.tchx84.Flatseal
+          - io.github.flattool.Warehouse
+          - com.ranfdev.DistroShelf
+          - io.missioncenter.MissionCenter
           - org.gnome.Loupe
           - com.vixalien.sticky
+          - io.gitlab.adhami3310.Impression
           - org.localsend.localsend_app
+          - app.drey.Warp
           - app.zen_browser.zen
+          - com.protonvpn.www
+
+
+      - scope: user
+        repo:
+          title: Flathub (user)
+        install:
+          - org.onlyoffice.desktopeditors
           - com.notesnook.Notesnook
           - dev.vencord.Vesktop
           - io.github.Faugus.faugus-launcher
@@ -56,7 +72,9 @@ modules:
           - com.bitwarden.desktop
           - org.kde.kdenlive
           - org.inkscape.Inkscape
+          - org.audacityteam.Audacity
           - com.obsproject.Studio
+          - org.godotengine.Godot
 
   - type: gnome-extensions
     install:
