@@ -3,10 +3,14 @@
 # image will be published to ghcr.io/anhdong/duckora
 
 name: duckora
-description: This is my personal OS image.
+description: Mobun's opinionated Fedora Silverblue setup. Duck-approved!
 
 base-image: ghcr.io/blue-build/base-images/fedora-silverblue
 image-version: 44
+
+platforms:
+  - linux/amd64
+  - linux/arm64
 
 type: os-release
 properties:
