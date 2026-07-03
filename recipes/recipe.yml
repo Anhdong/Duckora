@@ -33,8 +33,10 @@ modules:
       cleanup: true
     install:
       packages:
-        - codium
+        - bat
+        - eza
         - starship
+        - codium
     remove:
       packages:
         - gnome-system-monitor
