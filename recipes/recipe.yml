@@ -8,9 +8,6 @@ description: Mobun's opinionated Fedora Silverblue setup. Duck-approved!
 base-image: ghcr.io/blue-build/base-images/fedora-silverblue
 image-version: 44
 
-platforms:
-  - linux/amd64
-  - linux/arm64
 
 modules:
   - type: os-release
