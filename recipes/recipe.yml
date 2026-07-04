@@ -32,6 +32,8 @@ modules:
         - atim/starship
       cleanup: true
     install:
+      skip-unavailble: true
+      install-weak-deps: false
       packages:
         - bat
         - eza
@@ -40,6 +42,8 @@ modules:
         - starship
         - codium
     remove:
+      skip-unavailble: true
+      auto-remove: true
       packages:
         - gnome-system-monitor
         - gnome-software
