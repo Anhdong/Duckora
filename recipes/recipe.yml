@@ -32,21 +32,21 @@ modules:
         - atim/starship
       cleanup: true
     install:
-      #skip-unavailable: true
-      #install-weak-deps: false
-      #allow-erasing: true
+      skip-unavailable: true
+      install-weak-deps: false
+      allow-erasing: true
       packages:
-        #- bat
-        #- eza
-        #- fzf
-        #- zoxide
+        - bat
+        - eza
+        - fzf
+        - zoxide
         - starship
         - codium
     remove:
-      #auto-remove: true
+      auto-remove: true
       packages:
-        #- gnome-system-monitor
-        #- gnome-software
+        - gnome-system-monitor
+        - gnome-software
         - firefox
         - firefox-langpacks
         - htop
