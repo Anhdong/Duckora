@@ -32,7 +32,7 @@ modules:
         - atim/starship
       cleanup: true
     install:
-      skip-unavailble: true
+      skip-unavailable: true
       install-weak-deps: false
       packages:
         - bat
@@ -42,7 +42,6 @@ modules:
         - starship
         - codium
     remove:
-      skip-unavailble: true
       auto-remove: true
       packages:
         - gnome-system-monitor
