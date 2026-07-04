@@ -24,10 +24,10 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      #files:
-      #  - vscodium.repo
-      copr:
-        - atim/starship
+      files:
+        - vscodium.repo
+      #copr:
+      #  - atim/starship
     install:
       skip-unavailable: true
       install-weak-deps: false
@@ -37,8 +37,8 @@ modules:
         - eza
         - fzf
         - zoxide
-        - starship
-  #      - codium
+      #  - starship
+        - codium
     remove:
       auto-remove: true
       packages:
