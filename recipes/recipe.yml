@@ -24,24 +24,24 @@ modules:
       - source: system
         destination: /
 
-  #- type: dnf
-  #  repos:
-  #    files:
-  #      - vscodium.repo
-  #    copr:
-  #      - atim/starship
-  #    cleanup: true
-  #  install:
-  #    skip-unavailable: true
-  #    install-weak-deps: false
-  #    allow-erasing: true
-  #    packages:
+  - type: dnf
+    repos:
+      files:
+        - vscodium.repo
+      copr:
+        - atim/starship
+      cleanup: true
+    install:
+      skip-unavailable: true
+      install-weak-deps: false
+      allow-erasing: true
+      packages:
   #      - bat
   #      - eza
   #      - fzf
   #      - zoxide
-  #      - starship
-  #      - codium
+        - starship
+        - codium
   #  remove:
   #    auto-remove: true
   #    packages:
