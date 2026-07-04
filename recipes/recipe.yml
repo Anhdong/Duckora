@@ -34,6 +34,7 @@ modules:
     install:
       skip-unavailable: true
       install-weak-deps: false
+      allow-erasing: true
       packages:
         - bat
         - eza
