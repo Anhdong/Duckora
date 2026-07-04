@@ -35,6 +35,8 @@ modules:
       packages:
         - bat
         - eza
+        - fzf
+        - zoxide
         - starship
         - codium
     remove:
@@ -68,7 +70,6 @@ modules:
           - app.drey.Warp
           - app.zen_browser.zen
           - com.protonvpn.www
-
 
       - scope: user
         repo:
