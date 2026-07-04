@@ -12,13 +12,13 @@ platforms:
   - linux/amd64
   - linux/arm64
 
-type: os-release
-properties:
-  ID: duckora
-  NAME: Duckora
-  PRETTY_NAME: Duckora(Silverblue)
-
 modules:
+  - type: os-release
+    properties:
+      ID: duckora
+      NAME: Duckora
+      PRETTY_NAME: Duckora(Silverblue)
+
   - type: files
     files:
       - source: system
