@@ -36,17 +36,17 @@ modules:
       #install-weak-deps: false
       #allow-erasing: true
       packages:
-        - bat
-        - eza
-        - fzf
-        - zoxide
+        #- bat
+        #- eza
+        #- fzf
+        #- zoxide
         - starship
         - codium
     remove:
       #auto-remove: true
       packages:
         #- gnome-system-monitor
-        - gnome-software
+        #- gnome-software
         - firefox
         - firefox-langpacks
         - htop
