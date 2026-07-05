@@ -26,8 +26,8 @@ modules:
       cleanup: true
       files:
         - vscodium.repo
-      #copr:
-      #  - atim/starship
+      copr:
+        - atim/starship
     install:
       skip-unavailable: true
       install-weak-deps: false
@@ -37,7 +37,7 @@ modules:
         - eza
         - fzf
         - zoxide
-      #  - starship
+        - starship
         - codium
     remove:
       auto-remove: true
