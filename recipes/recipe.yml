@@ -12,8 +12,6 @@ image-version: 44
 modules:
   - type: os-release
     properties:
-      ID: duckora
-      ID_LIKE: fedora
       NAME: Duckora
       PRETTY_NAME: Duckora(Silverblue)
 
