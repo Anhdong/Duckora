@@ -13,7 +13,7 @@ modules:
   - type: os-release
     properties:
       ID: duckora
-      ID_LIKE: blue_build
+      ID_LIKE: fedora
       NAME: Duckora
       PRETTY_NAME: Duckora(Silverblue)
 
