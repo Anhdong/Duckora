@@ -67,6 +67,7 @@ modules:
           - io.github.flattool.Warehouse
           - com.ranfdev.DistroShelf
           - io.missioncenter.MissionCenter
+          - com.mattjakeman.ExtensionManager
           - org.gnome.Loupe
           - com.vixalien.sticky
           - io.gitlab.adhami3310.Impression
