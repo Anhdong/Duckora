@@ -34,7 +34,6 @@ modules:
       packages:
         - bat
         - eza
-        - fzf
         - zoxide
         - starship
         - codium
@@ -48,6 +47,9 @@ modules:
         - htop
         - nvtop
 
+  - type: script
+    scripts:
+    - install_ble.sh
 
   - type: brew
     nofile-limits: true
