@@ -36,6 +36,7 @@ modules:
         - eza
         - zoxide
         - starship
+        - stow
         - codium
     remove:
       auto-remove: true
