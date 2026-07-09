@@ -105,9 +105,10 @@ modules:
       - Vitals
       # Search light (not availble in 44 yet)
     uninstall:
-      - Apps Menu
-      - Background Logo
-      - Launch New Instance
-      - Window List
+      - 6 #Apps Menu
+      - 7364 #Background Logo
+      - 600 #Launch New Instance
+      - 602 #Window List
+      - 8 #Places Status Indicator
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
