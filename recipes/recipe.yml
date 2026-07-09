@@ -103,6 +103,6 @@ modules:
       - GNOME Fuzzy App Search
       - GSConnect
       - Vitals
-      # Search light (unavailble in 44 yet)
+      # Search light (not availble in 44 yet)
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
