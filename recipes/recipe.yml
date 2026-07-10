@@ -79,6 +79,7 @@ modules:
       - scope: user
         repo:
           title: Flathub (user)
+        notify: false
         install:
           - org.onlyoffice.desktopeditors
           - com.notesnook.Notesnook
