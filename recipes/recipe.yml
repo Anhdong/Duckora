@@ -112,4 +112,6 @@ modules:
       # Window List (have duplicate cannot solve by ID)
       - Places Status Indicator
 
+  - type: initramfs #Rebuild the boot ram disk so it could update plymouth theme
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
