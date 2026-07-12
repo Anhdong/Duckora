@@ -69,6 +69,7 @@ modules:
           - io.missioncenter.MissionCenter
           - com.mattjakeman.ExtensionManager
           - org.gnome.Loupe
+          - org.gnome.Calendar
           - com.vixalien.sticky
           - io.gitlab.adhami3310.Impression
           - org.localsend.localsend_app
