@@ -38,6 +38,7 @@ modules:
         - starship
         - stow
         - codium
+        - nvim
     remove:
       auto-remove: true
       packages:
