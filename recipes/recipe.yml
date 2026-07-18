@@ -25,6 +25,7 @@ modules:
       cleanup: true
       files:
         - vscodium.repo
+        - zerotier.repo
       copr:
         - atim/starship
     install:
@@ -39,6 +40,7 @@ modules:
         - stow
         - codium
         - nvim
+        - zerotier-one
     remove:
       auto-remove: true
       packages:
