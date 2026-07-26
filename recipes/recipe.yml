@@ -33,6 +33,7 @@ modules:
       install-weak-deps: false
       allow-erasing: true
       packages:
+        - celluloid
         - bat
         - eza
         - zoxide
