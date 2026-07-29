@@ -34,6 +34,7 @@ modules:
       allow-erasing: true
       packages:
         - celluloid
+        - gnome-tweaks
         - bat
         - eza
         - zoxide
@@ -101,6 +102,7 @@ modules:
 
   - type: gnome-extensions
     install:
+      - User Themes
       - Blur my Shell
       - Dash2Dock Animated
       - Just Perfection
