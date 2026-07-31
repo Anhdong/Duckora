@@ -27,12 +27,14 @@ modules:
         - vscodium.repo
         - zerotier.repo
       copr:
+        - imput/helium
         - atim/starship
     install:
       skip-unavailable: true
       install-weak-deps: false
       allow-erasing: true
       packages:
+        - helium-bin
         - celluloid
         - gnome-tweaks
         - bat
