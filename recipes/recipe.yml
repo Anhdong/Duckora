@@ -37,6 +37,7 @@ modules:
         #api for card
         - intel-compute-runtime 
         - intel-level-zero
+        - intel-level-zero-gpu-raytracing
         - oneapi-level-zero
         - helium-bin
         - celluloid
