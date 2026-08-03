@@ -34,6 +34,9 @@ modules:
       install-weak-deps: false
       allow-erasing: true
       packages:
+        #api for card
+        - intel-compute-runtime 
+        - intel-level-zero
         - helium-bin
         - celluloid
         - gnome-tweaks
